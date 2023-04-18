@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>The form</title>
+    </head>
+    <body>
+        <h1>This is a form </h1>
+        <h3>An html form is the best way to collect data from users</h3>
+        <div class="classA" style="background-color: aqua;">This is a div</div>
+        <span class="classA" style="background-color: rgb(238, 186, 210);">This is a span</span>
+        <span class="classA" style="background-color: lightgreen;">This is a second span</span>
+        <h1 id="form_H1">sign up</h1>
+        <form action="" method="post">
+            <label for="User_Name">Enter your name:</label>
+            <input type="text" name="User_Name" id="User_Name" required>
+            <br><br>
+            <label for="User_Email">Enter your email:</label>
+            <input type="email" name="User_Email" id="User_Email" required>
+            <br><br>
+            <input type="submit" value="Sign-up">
+        </form>
+        <br>
+        <form action="" method="post">
+            <label for="foods">Choose what to eat:</label>
+            <select name="foods" id="foods">
+                <option value="Pizza">Pizza</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Hamburger">Hamburger</option>
+                <option value="Ravioli">Ravioli</option>
+            </select>
+            <br>
+            <label for="food_explain">Please explain your choice below:</label>
+            <br>
+            <textarea name="food_explain" id="food_explain" cols="30" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Eat">
+        </form>
+        <br>
+        <h3>Food links</h3>
+        <div>
+            <a href="http://">hamburger</a>
+            <a href="http://">pizza</a>
+            <a href="http://">ice cream</a>
+        </div>
+        <a href="http://">link 4</a>
+    </body>
+</html>
