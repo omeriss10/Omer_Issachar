@@ -1,0 +1,77 @@
+:root {
+    --myLightBlue: #4bbad8;
+    --myBlue: #2d0b5b;
+    --Sand: #fee5ae;
+}
+
+@font-face {
+    font-family: Suez;
+    src: url("Suez_One/SuezOne-Regular.ttf");
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--myBlue);
+    padding: 5vw;
+    border: 1px solid var(--Sand);
+}
+
+body {
+    background-color: var(--myLightBlue);
+    border: 3px solid var(--Sand);
+}
+
+body.type2 {
+    background-image: url("poodle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.type2 {
+    border: none;
+}
+
+h1 {
+    font-family: Suez;
+    animation-name: Disappear;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+}
+
+.GridContainer {
+    display: grid;
+    grid-template-areas: 
+    'top_left top_right top_right'
+    'middle_left middle_left middle_right'
+    'bottom_center bottom_center bottom_center';
+}
+
+.item1 {
+    grid-area: top_left;
+}
+
+.item2 {
+    grid-area: top_right;
+}
+
+.item3 {
+    grid-area: middle_left;
+    text-align: center;
+}
+
+.item4 {
+    grid-area: bottom_center;
+    text-align: center;
+}
+
+.item5 {
+    grid-area: middle_right;
+}
+
+@keyframes Disappear {
+    0% {color: var(--myBlue);}
+    50% {color: rgba(45, 11, 91, 0);}
+    100% {color: var(--myBlue);}
+}
+
