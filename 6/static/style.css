@@ -1,0 +1,21 @@
+* {
+    background-color: azure;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vw;
+    text-align: center;
+}
+
+button {
+    background-color: lightsteelblue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: aliceblue;
+}
+
+div {
+    transition: 1s;
+}
