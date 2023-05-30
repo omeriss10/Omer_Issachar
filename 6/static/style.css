@@ -16,6 +16,10 @@ button:hover {
     color: aliceblue;
 }
 
+button:active {
+    background-color: azure;
+}
+
 div {
     transition: 1s;
 }
