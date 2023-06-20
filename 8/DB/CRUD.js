@@ -12,7 +12,7 @@ const createNewUser = (req,res)=>{
         name: req.query.UserName
     };
     // run insert query
-    const Q1 = "INSERT INTO SignUps SET ?";
+    const Q1 = "INSERT INTO customersAA SET ?";
     sql.query(Q1, NewSignUp, (err, mysqlres)=>{
         if (err) {
             console.log(err);
